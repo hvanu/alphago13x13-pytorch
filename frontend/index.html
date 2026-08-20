@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go AlphaZero 13x13</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Go AlphaZero 13x13</h1>
+
+    <section class="game-info" aria-label="Game controls and status">
+      <div class="status">
+        <span id="turn-indicator">Loading...</span>
+        <span id="passes">Passes: 0</span>
+      </div>
+      <div>
+        <button id="new-game-btn" type="button">New Game</button>
+        <button id="pass-btn" type="button">Pass</button>
+      </div>
+    </section>
+
+    <section class="board-container" aria-label="Go board">
+      <canvas id="board" width="650" height="650"></canvas>
+    </section>
+
+    <section class="messages" aria-live="polite">
+      <p id="message" class="info">Ready.</p>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

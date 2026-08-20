@@ -1,0 +1,6 @@
+numpy
+torch 
+pytorch-lightning
+fastapi
+uvicorn[standard]
+pydantic
